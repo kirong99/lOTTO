@@ -1,0 +1,32 @@
+.ball{
+    float: left;
+    width: 60px;
+    height: 60px;
+    line-height: 60px; /*수직가운데 */
+    font-size: 28px;
+    border-radius: 100%;
+    text-align: center;
+    color:white;
+    font-weight: 500;
+    margin-right: 6px;
+    text-shadow: 0px 0px 3px rgba(73,57,0,0.8);
+}
+
+.ball1{
+    background-color: blue;
+}
+.ball2{
+    background-color: darkred;
+}
+.ball3{
+    background-color: aqua;
+}
+.ball4{
+    background-color: darkgreen;
+}
+.ball5{
+    background-color: violet;
+}
+.ball6{
+    background-color: yellow;
+}

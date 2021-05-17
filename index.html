@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로또 번호 추첨기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>자바스크립트 연습</h1>
+    <script>
+        var lotto = [];
+        // for문은 무조건 6번만 반복하기에 결과값이 6개 미만이 나올수 있다.
+        while(lotto.length < 6) {
+            var num = parseInt(Math.random()*45+1);
+            if(lotto.indexOf(num) == -1){
+                lotto.push(num);
+            }
+        }
+        lotto.sort((a,b)=>a-b);
+        document.write("<div class='ball ball1'>" + lotto[0] + "</div>");
+        document.write("<div class='ball ball2'>" + lotto[1] + "</div>");
+        document.write("<div class='ball ball3'>" + lotto[2] + "</div>");
+        document.write("<div class='ball ball4'>" + lotto[3] + "</div>");
+        document.write("<div class='ball ball5'>" + lotto[4] + "</div>");
+        document.write("<div class='ball ball6'>" + lotto[5] + "</div>"); 
+        // 오름차순정렬 ascii code기반
+        // document.write(lotto);
+        // document.write("Hello");
+        // 변수 var let const -> ES6
+        // legacy code 웹에이전시(고인물)
+        // Babel : ES6 (IE)
+        // 원하는 값은 1~45
+        // Math.random() * 45; // 0~44.~~~~~~
+        // Math.random() * 45+1 // 1~45.~~~~~
+        // var num = parseInt(Math.random() * 45+1); // 0~ 0.99999999999..
+        // var lotto = [1,2,3,4,5,6];
+        // document.write(lotto[0]); // 0~5
+        // commit
+    
+        
+
+    </script>
+</body>
+</html>
